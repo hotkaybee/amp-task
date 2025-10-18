@@ -24,7 +24,7 @@ app.use(errorHandler);
 
 // Handle unhandled promise rejections
 process.on('unhandledRejection', (reason, promise) => {
-  console.error('Unhandled Rejection at:', promise, 'reason:', reason);
+  console.error('Unhandled rejection at:', promise, 'reason:', reason);
   // Close server gracefully
   process.exit(1);
 });
